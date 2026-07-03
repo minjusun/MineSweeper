@@ -1,10 +1,10 @@
 package Game.src;
 
 public class Cell {
-    Boolean is_mine;
-    Boolean is_revealed;
-    Boolean is_flagged;
-    int adj_mines;
+    private Boolean is_mine;
+    private Boolean is_revealed;
+    private Boolean is_flagged;
+    private int adj_mines;
 
     public Cell(Boolean is_mine,Boolean is_revealed,Boolean is_flagged, int adj_mines){
         this.is_mine=is_mine;
@@ -15,6 +15,10 @@ public class Cell {
     public Boolean is_mine(){
         //checks if a cell is a mine
         return this.is_mine;
+    }
+    public void setMine(Boolean is_mine){
+        //sets whether this cell is a mine
+        this.is_mine=is_mine;
     }
     public Boolean is_revealed(){
         //check if revealed

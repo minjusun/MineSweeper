@@ -4,16 +4,27 @@ Handles grid
 package Game.src;
 public class Board {
     private Cell[][] board;
+    
     public Board(int row, int col){
-        //instantiate new Board
+        //instantiate new Board and populate with default cells
         this.board=new Cell[row][col];
-
-        //fill array with cell obj
-        for (int r=0; r<row; r++){
-            for (int c=0;c<col;c++){
-                board[r][c]=new Cell(false,false,false, false);
+        for (int i=0;i<row;i++){
+            for (int j=0;j<col;j++){
+                this.board[i][j]=new Cell(false,false,false,0);
             }
         }
+    }
+
+    public int getRows(){
+        return this.board.length;
+    }
+
+    public int getCols(){
+        return this.board.length==0 ? 0 : this.board[0].length;
+    }
+
+    public Cell getCell(int row, int col){
+        return this.board[row][col];
     }
 
     public void display(){
