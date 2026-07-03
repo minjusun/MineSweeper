@@ -32,5 +32,8 @@ public class Cell {
         //return number of adjacent cells
         return this.adj_mines;
     }
+    public String toString(){
+        return "mine:"+this.is_mine;
+    }
 
 }

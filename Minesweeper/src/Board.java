@@ -29,7 +29,11 @@ public class Board {
 
     public void display(){
         //print board to screen
-        System.out.println(this.board);
+        for (int i=0; i<getRows();i++){
+            for(int j=0;j<getCols();j++){
+                System.out.println(this.board[i][j]);
+            }
+        }
     }
     public void reveal(){
         //reveals a cell
