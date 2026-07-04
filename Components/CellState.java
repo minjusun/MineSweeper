@@ -1,4 +1,4 @@
-package Game.Components;
+package Components;
 
 public enum CellState {
     HIDDEN,

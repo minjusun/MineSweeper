@@ -1,4 +1,4 @@
-package Minesweeper.src;
+package src;
 
 /* 
 Initializes everything, owns Board, manage turns, handle input, track game loop (start, pause, end)

@@ -1,4 +1,4 @@
-package Game.src;
+package src;
 
 public class Cell {
     private Boolean is_mine;

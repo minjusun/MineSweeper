@@ -1,3 +1,5 @@
 The Minesweeper Game
 
 Game -> Board -> Cell
+
+java src.Game to start

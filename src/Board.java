@@ -1,7 +1,7 @@
 /*
 Handles grid
  */
-package Game.src;
+package src;
 public class Board {
     private Cell[][] board;
     
